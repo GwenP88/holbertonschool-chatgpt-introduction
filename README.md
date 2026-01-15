@@ -1,4 +1,4 @@
-# holbertonschool-chatgpt-introduction
+![ChatGPT Introduction Banner](assets/banner.png)
 
 ## Description
 This repository contains the **ChatGPT - Introduction** project: a hands-on module focused on using AI (ChatGPT) to improve **code quality** and **developer efficiency** through two main skills:
