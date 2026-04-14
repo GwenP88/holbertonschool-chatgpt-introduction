@@ -1,156 +1,170 @@
-![ChatGPT Introduction Banner](assets/banner.png)
+# Debugging
 
-## Description
-This repository contains the **ChatGPT - Introduction** project: a hands-on module focused on using AI (ChatGPT) to improve **code quality** and **developer efficiency** through two main skills:
-
-- **Debugging**: identify, explain, and fix bugs in provided code samples (Python + HTML/JavaScript).
-- **Automation / Documentation**: use AI to produce clearer code via comments, structure, and basic robustness (error handling).
-
-The goal is not to “trust AI blindly”, but to **test, verify, and critically evaluate** the proposed fixes.
+> Squashing bugs and automating the boring stuff — with a little help from AI.
 
 ---
 
-## Learning Objectives
-By the end of this project, you should be able to:
+## 📝 Description
 
-- Diagnose common programming errors and explain why they happen.
-- Fix buggy code and confirm the fix with real tests.
-- Improve reliability with input validation and error handling.
-- Write helpful documentation/comments (clear function description, parameters, returns).
-- Use ChatGPT as an assistant while keeping control of the final solution.
+This project is part of a specialized module exploring how artificial intelligence can be integrated into everyday coding practices. I work on two core pillars: debugging and automation. Using ChatGPT as a co-pilot, I diagnose and fix bugs across multiple programming languages, and I automate repetitive tasks like writing documentation and error handling. The goal is simple — write smarter code, faster, with fewer headaches (and fewer infinite loops).
 
 ---
 
-## Project Structure
-All tasks are located in:
+## 🎯 Learning Objectives
 
-- `debugging/`
-
-Files included:
-- `factorial.py`
-- `print_arguments.py`
-- `change_background.html`
-- `mines.py`
-- `factorial_recursive.py`
-- `checkbook.py`
-- `tic.py`
+By the end of this project, I am able to use ChatGPT as a practical debugging assistant to identify and correct errors in code across different languages, including Python, HTML, and JavaScript. I understand how to clearly articulate a problem to an AI tool and critically evaluate the solutions it suggests. I am also able to leverage AI to automate repetitive coding tasks such as adding documentation, implementing error handling, and generating boilerplate code. Most importantly, I have learned to verify, test, and question AI-generated outputs rather than blindly trusting them — because AI is a tool, not a magic wand.
 
 ---
 
-## Requirements
-- **Python 3** for Python scripts
-- A **web browser** for `change_background.html`
-- Basic command line usage
+## 🛠️ Technologies Used
+
+This project uses Python 3 as the primary scripting language, along with HTML and JavaScript for one web-based task. ChatGPT is used as the AI assistant throughout the debugging and automation workflow. No external Python libraries are required.
 
 ---
 
-## Tasks
+## ⚙️ Requirements
 
-### 0. Debugging - Python Factorial
-**File:** `debugging/factorial.py`  
-
-Fix the script so it correctly prints the factorial of the argument passed in the command line.
-
-Example:
-```
-./factorial.py 5
-120
-```
-
-### 1. Debugging - Python Arguments
-**File:** `debugging/print_arguments.py`
-
-Fix the script so it prints only the arguments, without printing the file name.
-
-Expected:
-```
-./print_arguments.py 1 2 3
-1
-2
-3
-```
-
-### 2. Debugging - HTML / JavaScript
-**File:** `debugging/change_background.html`
-
-Fix the HTML/JS so the background color changes when clicking the button.
-Test: open the file in a browser and click the button.
-
-### 3. Debugging - Python Mines (Minesweeper)
-**File:** `debugging/mines.py`
-
-Add a winning condition:
-- Detect when all non-mine cells are revealed
-- Display a win message and stop the game
-
-Expected ending message:
-```
-Congratulations! You've won the game.
-```
-
-### 4. Documentation - Python Factorial (Recursive)
-**File:** `debugging/factorial_recursive.py`
-
-Add comments with 3 sections:
-- function description
-- parameters
-- returns
-
-Goal: improve readability and clarity (documentation-style comments).e
-
-### 5. Error Handling - Python Checkbook
-**File:** `debugging/checkbook.py`
-
-Prevent crashes caused by invalid input (example: user types "test" instead of a number).
-Add error handling so the program:
-- does not crash
-- informs the user
-- asks again or safely returns to the menu
-
-### 6. Debugging - Tic Tac Toe (Python)
-**File:** `debugging/tic.py`
-
-Fix all issues in the game logic and test all user inputs, including:
-- non-numeric input
-- out-of-range coordinates
-- attempting to play on an occupied cell
-- draw condition (no winner)
-Expected: stable gameplay without crashing, with correct win/draw behavior.
+- OS: Ubuntu 20.04 LTS
+- Python version: `python3` (3.8.5)
+- All files must end with a new line
+- The first line of all Python files must be exactly: `#!/usr/bin/python3`
+- A README.md file at the root of the project is mandatory
+- Code must follow pycodestyle (version 2.7.*)
+- All files must be executable
+- No module imports allowed unless explicitly stated
 
 ---
 
-## Usage
+## 🚀 Installation
 
-### Run Python scripts
-
-From the repository root:
-
-```
-python3 debugging/factorial.py 5
-python3 debugging/print_arguments.py 1 2 3
-python3 debugging/mines.py
-python3 debugging/checkbook.py
-python3 debugging/tic.py
-```
-
-### Run the HTML file
-
-Open in a browser:
-```
-debugging/change_background.html
+```bash
+git clone https://github.com/GwenP88/holbertonschool-chatgpt-introduction.git
+cd holbertonschool-chatgpt-introduction/debugging
 ```
 
 ---
 
-## Testing Tips
+## ▶️ Usage / Execution
 
-Before considering a task “done”:
-- Run multiple test cases (normal + edge cases).
-- Try invalid inputs on purpose.
-- Make sure behavior matches the expected output examples.
-- If ChatGPT suggests a fix, verify it yourself by running the program.
+All Python scripts can be executed in two ways:
 
-## Author
+### 1. Direct execution
+Make the file executable and run it directly:
+```bash
+chmod +x filename.py
+./filename.py
+```
 
-Project completed as part of the Holberton School curriculum.
-**Gwenaëlle Pichot**
+### 2. Using Python interpreter
+Run the script with Python:
+```bash
+python3 filename.py
+```
+
+For the HTML file, simply open it in any modern web browser.
+
+---
+
+## 📊 Project Progress
+
+<p align="center">
+<img src="assets/progress_barre_100.gif" alt="Mandatory tasks progress" width="80%">
+</p>
+
+<p align="center">
+<sub>Mandatory tasks completion: 100%</sub>
+</p>
+
+---
+
+## ✨ Features
+
+### Task 0 - Debugging - Python Factorial
+
+- **Status:** Mandatory
+- **Objective:** Use ChatGPT to identify and correct a bug in a Python factorial function.
+- **Constraint:** The fixed script must correctly compute the factorial of the argument passed via command line.
+- **Expected behavior:** Running `./factorial.py 5` prints `120`. The original code caused an infinite loop because `n` was never decremented inside the `while` loop.
+
+**Files:** `factorial.py`
+
+---
+
+### Task 1 - Debugging - Python Arguments
+
+- **Status:** Mandatory
+- **Objective:** Use ChatGPT to fix a script that prints all command-line arguments.
+- **Constraint:** The script must print only the actual arguments, excluding the script name itself.
+- **Expected behavior:** Running `./print_arguments.py 1 2 3` prints `1`, `2`, `3` — one per line, no filename.
+
+**Files:** `print_arguments.py`
+
+---
+
+### Task 2 - Debugging - HTML / Javascript
+
+- **Status:** Mandatory
+- **Objective:** Use ChatGPT to identify and fix a bug in an HTML/JavaScript file.
+- **Constraint:** A button click must trigger a background color change on the page.
+- **Expected behavior:** The button labeled "Change Color" correctly changes the page background to a random color. The bug was a typo in the element ID (`colorButon` vs `colorButton`).
+
+**Files:** `change_background.html`
+
+---
+
+### Task 3 - Debugging - Python Mines
+
+- **Status:** Mandatory
+- **Objective:** Use ChatGPT to add a win condition to a Minesweeper game in Python.
+- **Constraint:** The game must detect when all non-mine cells have been revealed and declare the player a winner.
+- **Expected behavior:** When all safe cells are uncovered, the game prints `Congratulations! You've won the game.` and exits gracefully.
+
+**Files:** `mines.py`
+
+---
+
+### Task 4 - Documentation - Python Factorial
+
+- **Status:** Mandatory
+- **Objective:** Use ChatGPT to document a recursive factorial function.
+- **Constraint:** The docstring must include three sections: function description, parameters, and return value.
+- **Expected behavior:** The function is fully documented with a proper docstring. Running `./factorial_recursive.py 4` prints `24`.
+
+**Files:** `factorial_recursive.py`
+
+---
+
+### Task 5 - Error Handling - Python Checkbook
+
+- **Status:** Mandatory
+- **Objective:** Use ChatGPT to add error handling to a checkbook program.
+- **Constraint:** The program must not crash when the user enters non-numeric input for deposit or withdrawal amounts.
+- **Expected behavior:** Entering a string like `test` when prompted for an amount displays a friendly error message and prompts again, instead of raising a `ValueError`.
+
+**Files:** `checkbook.py`
+
+---
+
+### Task 6 - Debugging - Tic Tac Toe Python
+
+- **Status:** Mandatory
+- **Objective:** Use ChatGPT to identify and fix multiple bugs in a Tic Tac Toe game.
+- **Constraint:** All user inputs must be properly validated. There may be several bugs to find and fix.
+- **Expected behavior:** The game correctly alternates between players X and O, prevents overwriting occupied cells, detects a winner accurately, and handles all invalid inputs without crashing.
+
+**Files:** `tic.py`
+
+---
+
+## 🤝 Contributions & Acknowledgements
+
+Big thanks to the Holberton School curriculum team for designing a project that makes debugging feel like detective work — and to ChatGPT for being a patient (if occasionally overconfident) coding partner. Always verify what the AI tells you. It's fast, but it's not infallible.
+
+---
+
+## 👤 Author
+
+**Gwenaelle PICHOT**
+- Student at Holberton School
+- Track: holbertonschool-chatgpt-introduction
+- Project: Debugging
