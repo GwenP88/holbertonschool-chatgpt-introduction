@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.png" alt="holbertonschool-chatgpt-introduction Banner">
+</p>
+
 # Debugging
 
 > Squashing bugs and automating the boring stuff — with a little help from AI.
@@ -9,6 +13,10 @@
 This project is part of a specialized module exploring how artificial intelligence can be integrated into everyday coding practices. I work on two core pillars: debugging and automation. Using ChatGPT as a co-pilot, I diagnose and fix bugs across multiple programming languages, and I automate repetitive tasks like writing documentation and error handling. The goal is simple — write smarter code, faster, with fewer headaches (and fewer infinite loops).
 
 ---
+
+<p align="center">
+  <img src="./assets/banner1.jpeg" alt="holbertonschool-chatgpt-introduction Banner" width="400">
+</p>
 
 ## 🎯 Learning Objectives
 
